@@ -81,7 +81,7 @@ const SHOP_NAME = 'Việt Vina Asian Kitchen';
 const MENU_DATA = [
   // Suppen
   {"id":"sup-1","cat":"suppen","type":"single","name":"Garnelen-Suppe","price":4.9,"img":"images/suppe-garnelen.jpg"},
-  {"id":"sup-2","cat":"suppen","type":"single","name":"Kokos-Suppe","price":4.9,"img":"images/kokoscurry-huhn.jpg","desc":"Leicht scharf"},
+  {"id":"sup-2","cat":"suppen","type":"single","name":"Kokos-Suppe","price":4.9,"img":"images/kokoscurry-huhn.jpg","desc":"Leicht scharf"}, // placeholder
   {"id":"sup-3","cat":"suppen","type":"single","name":"Miso-Suppe","price":4.9,"img":"images/miso-suppe.jpg","ingredients":["Algen","Tofu","Dashi","Ingwer"]},
 
   // Salate
@@ -93,7 +93,7 @@ const MENU_DATA = [
     ],
     "img":"images/salat-wild-huhn.jpg"
   },
-  {"id":"salat-5","cat":"salate","type":"single","name":"Mango-Salat mit Garnelen","price":9.0,"img":"images/salat-wakame.jpg"},
+  {"id":"salat-5","cat":"salate","type":"single","name":"Mango-Salat mit Garnelen","price":9.0,"img":"images/logo.jpg"}, // placeholder
   {"id":"salat-6","cat":"salate","type":"single","name":"Kimchi-Salat","price":5.9,"img":"images/salat-kimchi.jpg"},
   {"id":"salat-7","cat":"salate","type":"single","name":"Wakame-Salat","price":5.9,"img":"images/salat-wakame.jpg"},
 
@@ -124,7 +124,7 @@ const MENU_DATA = [
   },
   {"id":"vor-16","cat":"vorspeisen","type":"single","name":"Tempura-Garnelen","price":5.9,"img":"images/tempura-garnelen.jpg"},
 
-  // Hauptgerichte – tạm dùng ảnh chung
+  // Hauptgerichte (đang dùng ảnh chung kokoscurry-huhn.jpg)
   {"id":"hg-17","cat":"haupt","type":"group","name":"Kokoscurry Sauce",
     "options":[
       {"key":"a","label":"mit Huhn","price":11.9},
@@ -156,7 +156,7 @@ const MENU_DATA = [
     {"key":"e","label":"mit Tofu","price":10.9}
   ],"img":"images/kokoscurry-huhn.jpg"},
   {"id":"hg-22","cat":"haupt","type":"single","name":"Gebratenes Rind mit Zitronengras & Chili","price":13.9,"img":"images/kokoscurry-huhn.jpg"},
-  {"id":"hg-23","cat":"haupt","type":"single","name":"Rind „Lúc Lắc“ karamellisiert","price":13.9,"img":"images/bo-luc-lac.jpg"},
+  {"id":"hg-23","cat":"haupt","type":"single","name":"Rind „Lúc Lắc“ karamellisiert","price":13.9,"img":"images/kokoscurry-huhn.jpg"}, // placeholder (chưa có bo-luc-lac.jpg)
   {"id":"hg-24","cat":"haupt","type":"single","name":"Gebratenes Rind mit Gemüse","price":13.9,"img":"images/kokoscurry-huhn.jpg"},
   {"id":"hg-25","cat":"haupt","type":"group","name":"Gebratenes Gemüse","options":[
     {"key":"a","label":"mit Huhn","price":11.9},{"key":"b","label":"mit gebackenem Huhn","price":12.9},
@@ -197,20 +197,20 @@ const MENU_DATA = [
   ],"img":"images/kokoscurry-huhn.jpg"},
 
   // Spezial
-  {"id":"bun-33","cat":"suppen","type":"single","name":"Bún Chua Hải Sản Suppe","price":14.9,"img":"images/bun-chua-hai-san.jpg"},
-  {"id":"bun-34","cat":"spezial","type":"single","name":"Bún Chả Hà Nội (Spezialität)","price":14.9,"img":"images/bun-cha-ha-noi.jpg"},
-  {"id":"topokki-36","cat":"spezial","type":"single","name":"Tteokbokki (Topokki)","price":9.9,"img":"images/Topokki.jpg"},
+  {"id":"bun-33","cat":"suppen","type":"single","name":"Bún Chua Hải Sản Suppe","price":14.9,"img":"images/kokoscurry-huhn.jpg"}, // placeholder
+  {"id":"bun-34","cat":"spezial","type":"single","name":"Bún Chả Hà Nội (Spezialität)","price":14.9,"img":"images/kokoscurry-huhn.jpg"}, // placeholder
+  {"id":"topokki-36","cat":"spezial","type":"single","name":"Tteokbokki (Topokki)","price":9.9,"img":"images/kokoscurry-huhn.jpg"}, // placeholder
 
   // Kids
   {"id":"kid-k1","cat":"kids","type":"single","name":"Süßkartoffel-Pommes mit gebackenem Fleisch","price":8.9,"img":"images/suesskartoffel-pommes.jpg"},
   {"id":"kid-k2","cat":"kids","type":"single","name":"Chicken Yakitori mit Tempura-Garnelen","price":8.9,"img":"images/yakitori.jpg"},
 
-  // Dessert – tạm dùng ảnh chung
+  // Dessert (placeholder)
   {"id":"des-35","cat":"dessert","type":"single","name":"Gebackene Banane","price":5.9,"img":"images/kokoscurry-huhn.jpg"},
   {"id":"des-36","cat":"dessert","type":"single","name":"Mochi","price":5.9,"img":"images/kokoscurry-huhn.jpg"},
   {"id":"des-37","cat":"dessert","type":"single","name":"Sesambällchen","price":5.9,"img":"images/kokoscurry-huhn.jpg"},
 
-  // Getränke / Kaffee – có thể để ảnh chung hoặc logo
+  // Getränke / Kaffee
   {"id":"drinks","cat":"getraenke","type":"list","name":"Getränke",
     "items":[
       {"id":"dr-cola","name":"Cola 0,3l","price":2.5},
