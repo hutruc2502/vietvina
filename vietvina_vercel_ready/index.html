@@ -79,162 +79,167 @@ const SHOP_NAME = 'Việt Vina Asian Kitchen';
 
 /** GROUPED MENU **/
 const MENU_DATA = [
-  {"id":"sup-1","cat":"suppen","type":"single","name":"Garnelen-Suppe","price":4.9,"img":"images/Garnelen-suppe.avif"},
-  {"id":"sup-2","cat":"suppen","type":"single","name":"Kokos-Suppe","price":4.9,"img":"images/Kokossuppe.jpg","desc":"Leicht scharf"},
-  {"id":"sup-3","cat":"suppen","type":"single","name":"Miso-Suppe","price":4.9,"img":"images/miso-suppe.avif","ingredients":["Algen","Tofu","Dashi","Ingwer"]},
+  // Suppen
+  {"id":"sup-1","cat":"suppen","type":"single","name":"Garnelen-Suppe","price":4.9,"img":"images/suppe-garnelen.jpg"},
+  {"id":"sup-2","cat":"suppen","type":"single","name":"Kokos-Suppe","price":4.9,"img":"images/kokoscurry-huhn.jpg","desc":"Leicht scharf"},
+  {"id":"sup-3","cat":"suppen","type":"single","name":"Miso-Suppe","price":4.9,"img":"images/miso-suppe.jpg","ingredients":["Algen","Tofu","Dashi","Ingwer"]},
 
-  {"id":"salat-4","cat":"salate","type":"group","name":"Wildkräutersalat","options":[
-    {"key":"a","label":"mit Huhn","price":7.9},
-    {"key":"b","label":"mit Garnelen","price":8.9},
-    {"key":"c","label":"mit Tofu","price":7.0}
-  ],"img":"images/wildkräutersalat.avif"},
-  {"id":"salat-5","cat":"salate","type":"single","name":"Mango-Salat mit Garnelen","price":9.0,"img":"images/mangosalat-mit-garnelen.jpg"},
-  {"id":"salat-6","cat":"salate","type":"single","name":"Kimchi-Salat","price":5.9,"img":"images/kimchi-salat.avif"},
-  {"id":"salat-7","cat":"salate","type":"single","name":"Wakame-Salat","price":5.9,"img":"images/wakam-salat.avif"},
+  // Salate
+  {"id":"salat-4","cat":"salate","type":"group","name":"Wildkräutersalat",
+    "options":[
+      {"key":"a","label":"mit Huhn","price":7.9},
+      {"key":"b","label":"mit Garnelen","price":8.9},
+      {"key":"c","label":"mit Tofu","price":7.0}
+    ],
+    "img":"images/salat-wild-huhn.jpg"
+  },
+  {"id":"salat-5","cat":"salate","type":"single","name":"Mango-Salat mit Garnelen","price":9.0,"img":"images/salat-wakame.jpg"},
+  {"id":"salat-6","cat":"salate","type":"single","name":"Kimchi-Salat","price":5.9,"img":"images/salat-kimchi.jpg"},
+  {"id":"salat-7","cat":"salate","type":"single","name":"Wakame-Salat","price":5.9,"img":"images/salat-wakame.jpg"},
 
-  {"id":"vor-8","cat":"vorspeisen","type":"group","name":"Sommerrollen (2 Stück)","desc":"Hausgemachte Sauce oder Schalottensauce (vegan)","options":[
-    {"key":"a","label":"mit Huhn","price":5.9},
-    {"key":"b","label":"mit Tempura-Garnelen","price":6.9},
-    {"key":"c","label":"mit Tofu","price":5.0},
-    {"key":"d","label":"Tempura-Avocado","price":5.9}
-  ],"img":"images/Sommerollen.avif"},
-  {"id":"vor-9","cat":"vorspeisen","type":"group","name":"Edamame","options":[
-    {"key":"a","label":"Classic (gesiedet & gesalzen)","price":5.9},
-    {"key":"b","label":"Spicy","price":6.5}
-  ],"img":"images/Edamane.avif"},
-  {"id":"vor-10","cat":"vorspeisen","type":"single","name":"Nem Hanoi (3 Stück)","price":6.9,"img":"images/nem-hanoi.svg","ingredients":["Garnelen","Hackfleisch","Glasnudeln","Morcheln","Gemüse"]},
-  {"id":"vor-11","cat":"vorspeisen","type":"single","name":"Há cảo (Ha Cao) 4 Stück","price":6.9,"img":"images/ha-cao.avif","ingredients":["Garnelen","Teigtaschen"]},
-  {"id":"vor-12","cat":"vorspeisen","type":"single","name":"Süßkartoffel-Pommes","price":5.9,"img":"images/Süßkartoffelpommes.avif"},
-  {"id":"vor-13","cat":"vorspeisen","type":"single","name":"Saigon Mini-Frühlingsrollen (6 Stück)","price":5.9,"img":"images/saigon-mini-rollen.avif","desc":"vegetarische Füllung, süß-saure Sauce"},
-  {"id":"vor-14","cat":"vorspeisen","type":"single","name":"Chicken Yakitori","price":5.9,"img":"images/Chicken-Yakitori.avif"},
-  {"id":"vor-15","cat":"vorspeisen","type":"group","name":"Gyoza (6 Stück)","options":[
-    {"key":"a","label":"Classic","price":6.9},
-    {"key":"b","label":"Veggie","price":6.0}
-  ],"img":"images/gyoza.svg"},
-  {"id":"vor-16","cat":"vorspeisen","type":"single","name":"Tempura-Garnelen","price":5.9,"img":"images/garnele_tempura.svg"},
+  // Vorspeisen
+  {"id":"vor-8","cat":"vorspeisen","type":"group","name":"Sommerrollen (2 Stück)","desc":"Hausgemachte Sauce oder Schalottensauce (vegan)",
+    "options":[
+      {"key":"a","label":"mit Huhn","price":5.9},
+      {"key":"b","label":"mit Tempura-Garnelen","price":6.9},
+      {"key":"c","label":"mit Tofu","price":5.0},
+      {"key":"d","label":"Tempura-Avocado","price":5.9}
+    ],
+    "img":"images/sommerrollen-garnelen.jpg"
+  },
+  {"id":"vor-9","cat":"vorspeisen","type":"group","name":"Edamame",
+    "options":[{"key":"a","label":"Classic (gesiedet & gesalzen)","price":5.9},{"key":"b","label":"Spicy","price":6.5}],
+    "img":"images/edamame.jpg"
+  },
+  {"id":"vor-10","cat":"vorspeisen","type":"single","name":"Nem Hanoi (3 Stück)","price":6.9,"img":"images/nem-hanoi.jpg",
+    "ingredients":["Garnelen","Hackfleisch","Glasnudeln","Morcheln","Gemüse"]},
+  {"id":"vor-11","cat":"vorspeisen","type":"single","name":"Há cảo (Ha Cao) 4 Stück","price":6.9,"img":"images/ha-cao.jpg",
+    "ingredients":["Garnelen","Teigtaschen"]},
+  {"id":"vor-12","cat":"vorspeisen","type":"single","name":"Süßkartoffel-Pommes","price":5.9,"img":"images/suesskartoffel-pommes.jpg"},
+  {"id":"vor-13","cat":"vorspeisen","type":"single","name":"Saigon Mini-Frühlingsrollen (6 Stück)","price":5.9,"img":"images/mini-rollen.jpg","desc":"vegetarische Füllung, süß-saure Sauce"},
+  {"id":"vor-14","cat":"vorspeisen","type":"single","name":"Chicken Yakitori","price":5.9,"img":"images/yakitori.jpg"},
+  {"id":"vor-15","cat":"vorspeisen","type":"group","name":"Gyoza (6 Stück)",
+    "options":[{"key":"a","label":"Classic","price":6.9},{"key":"b","label":"Veggie","price":6.0}],
+    "img":"images/gyoza.jpg"
+  },
+  {"id":"vor-16","cat":"vorspeisen","type":"single","name":"Tempura-Garnelen","price":5.9,"img":"images/tempura-garnelen.jpg"},
 
-  {"id":"hg-17","cat":"haupt","type":"group","name":"Kokoscurry Sauce","options":[
-    {"key":"a","label":"mit Huhn","price":11.9},
-    {"key":"b","label":"mit gebackenem Huhn","price":12.9},
-    {"key":"c","label":"mit Garnelen","price":12.9},
-    {"key":"d","label":"mit gebackener Ente","price":13.9},
-    {"key":"e","label":"mit Tofu","price":10.9}
-  ],"img":"images/placeholder.svg"},
+  // Hauptgerichte – tạm dùng ảnh chung
+  {"id":"hg-17","cat":"haupt","type":"group","name":"Kokoscurry Sauce",
+    "options":[
+      {"key":"a","label":"mit Huhn","price":11.9},
+      {"key":"b","label":"mit gebackenem Huhn","price":12.9},
+      {"key":"c","label":"mit Garnelen","price":12.9},
+      {"key":"d","label":"mit gebackener Ente","price":13.9},
+      {"key":"e","label":"mit Tofu","price":10.9}
+    ],
+    "img":"images/kokoscurry-huhn.jpg"
+  },
   {"id":"hg-18","cat":"haupt","type":"group","name":"Kokos Mango Sauce","options":[
-    {"key":"a","label":"mit Huhn","price":11.9},
-    {"key":"b","label":"mit gebackenem Huhn","price":12.9},
-    {"key":"c","label":"mit Garnelen","price":12.9},
-    {"key":"d","label":"mit gebackener Ente","price":13.9},
+    {"key":"a","label":"mit Huhn","price":11.9},{"key":"b","label":"mit gebackenem Huhn","price":12.9},
+    {"key":"c","label":"mit Garnelen","price":12.9},{"key":"d","label":"mit gebackener Ente","price":13.9},
     {"key":"e","label":"mit Tofu","price":10.9}
-  ],"img":"images/placeholder.svg"},
+  ],"img":"images/kokoscurry-huhn.jpg"},
   {"id":"hg-19","cat":"haupt","type":"group","name":"Peanut Rice","options":[
-    {"key":"a","label":"mit Huhn","price":11.9},
-    {"key":"b","label":"mit gebackenem Huhn","price":12.9},
-    {"key":"c","label":"mit Garnelen","price":12.9},
-    {"key":"d","label":"mit gebackener Ente","price":13.9},
+    {"key":"a","label":"mit Huhn","price":11.9},{"key":"b","label":"mit gebackenem Huhn","price":12.9},
+    {"key":"c","label":"mit Garnelen","price":12.9},{"key":"d","label":"mit gebackener Ente","price":13.9},
     {"key":"e","label":"mit Tofu","price":10.9}
-  ],"img":"images/placeholder.svg"},
+  ],"img":"images/kokoscurry-huhn.jpg"},
   {"id":"hg-20","cat":"haupt","type":"group","name":"Buddha’s Food","options":[
-    {"key":"a","label":"mit Huhn","price":11.9},
-    {"key":"b","label":"mit gebackenem Huhn","price":12.9},
-    {"key":"c","label":"mit Garnelen","price":12.9},
-    {"key":"d","label":"mit gebackener Ente","price":13.9},
+    {"key":"a","label":"mit Huhn","price":11.9},{"key":"b","label":"mit gebackenem Huhn","price":12.9},
+    {"key":"c","label":"mit Garnelen","price":12.9},{"key":"d","label":"mit gebackener Ente","price":13.9},
     {"key":"e","label":"mit Tofu","price":10.9}
-  ],"img":"images/placeholder.svg"},
+  ],"img":"images/kokoscurry-huhn.jpg"},
   {"id":"hg-21","cat":"haupt","type":"group","name":"Süßsauce","options":[
-    {"key":"a","label":"mit Huhn","price":11.9},
-    {"key":"b","label":"mit gebackenem Huhn","price":12.9},
-    {"key":"c","label":"mit Garnelen","price":12.9},
-    {"key":"d","label":"mit gebackener Ente","price":13.9},
+    {"key":"a","label":"mit Huhn","price":11.9},{"key":"b","label":"mit gebackenem Huhn","price":12.9},
+    {"key":"c","label":"mit Garnelen","price":12.9},{"key":"d","label":"mit gebackener Ente","price":13.9},
     {"key":"e","label":"mit Tofu","price":10.9}
-  ],"img":"images/placeholder.svg"},
-  {"id":"hg-22","cat":"haupt","type":"single","name":"Gebratenes Rind mit Zitronengras & Chili","price":13.9,"img":"images/placeholder.svg"},
+  ],"img":"images/kokoscurry-huhn.jpg"},
+  {"id":"hg-22","cat":"haupt","type":"single","name":"Gebratenes Rind mit Zitronengras & Chili","price":13.9,"img":"images/kokoscurry-huhn.jpg"},
   {"id":"hg-23","cat":"haupt","type":"single","name":"Rind „Lúc Lắc“ karamellisiert","price":13.9,"img":"images/bo-luc-lac.jpg"},
-  {"id":"hg-24","cat":"haupt","type":"single","name":"Gebratenes Rind mit Gemüse","price":13.9,"img":"images/placeholder.svg"},
+  {"id":"hg-24","cat":"haupt","type":"single","name":"Gebratenes Rind mit Gemüse","price":13.9,"img":"images/kokoscurry-huhn.jpg"},
   {"id":"hg-25","cat":"haupt","type":"group","name":"Gebratenes Gemüse","options":[
-    {"key":"a","label":"mit Huhn","price":11.9},
-    {"key":"b","label":"mit gebackenem Huhn","price":12.9},
-    {"key":"c","label":"mit Garnelen","price":12.9},
-    {"key":"d","label":"mit gebackener Ente","price":13.9},
+    {"key":"a","label":"mit Huhn","price":11.9},{"key":"b","label":"mit gebackenem Huhn","price":12.9},
+    {"key":"c","label":"mit Garnelen","price":12.9},{"key":"d","label":"mit gebackener Ente","price":13.9},
     {"key":"e","label":"mit Tofu","price":10.9}
-  ],"img":"images/placeholder.svg"},
+  ],"img":"images/kokoscurry-huhn.jpg"},
 
+  // Nudel
   {"id":"hg-26","cat":"nudel","type":"group","name":"Udon-Nudeln (gebraten)","options":[
-    {"key":"a","label":"mit Huhn","price":12.9},
-    {"key":"b","label":"mit gebackenem Huhn","price":13.9},
-    {"key":"c","label":"mit Garnelen","price":13.9},
-    {"key":"d","label":"mit gebackener Ente","price":14.9},
+    {"key":"a","label":"mit Huhn","price":12.9},{"key":"b","label":"mit gebackenem Huhn","price":13.9},
+    {"key":"c","label":"mit Garnelen","price":13.9},{"key":"d","label":"mit gebackener Ente","price":14.9},
     {"key":"e","label":"mit Tofu","price":11.9}
-  ],"img":"images/placeholder.svg"},
+  ],"img":"images/kokoscurry-huhn.jpg"},
   {"id":"hg-29","cat":"nudel","type":"group","name":"China-Nudel (gebraten)","options":[
-    {"key":"a","label":"mit Huhn","price":11.9},
-    {"key":"b","label":"mit gebackenem Huhn","price":10.9},
-    {"key":"c","label":"mit Garnelen","price":10.9},
-    {"key":"d","label":"mit gebackener Ente","price":11.9},
+    {"key":"a","label":"mit Huhn","price":11.9},{"key":"b","label":"mit gebackenem Huhn","price":10.9},
+    {"key":"c","label":"mit Garnelen","price":10.9},{"key":"d","label":"mit gebackener Ente","price":11.9},
     {"key":"e","label":"mit Tofu","price":8.0}
-  ],"img":"images/placeholder.svg"},
+  ],"img":"images/kokoscurry-huhn.jpg"},
   {"id":"hg-31","cat":"nudel","type":"group","name":"Gebratene Glasnudeln","options":[
-    {"key":"a","label":"mit Huhn","price":9.9},
-    {"key":"b","label":"mit gebackenem Huhn","price":10.9},
-    {"key":"c","label":"mit Garnelen","price":10.9},
-    {"key":"d","label":"mit gebackener Ente","price":11.9},
+    {"key":"a","label":"mit Huhn","price":9.9},{"key":"b","label":"mit gebackenem Huhn","price":10.9},
+    {"key":"c","label":"mit Garnelen","price":10.9},{"key":"d","label":"mit gebackener Ente","price":11.9},
     {"key":"e","label":"mit Tofu","price":8.0}
-  ],"img":"images/placeholder.svg"},
+  ],"img":"images/kokoscurry-huhn.jpg"},
 
-  {"id":"pho-27","cat":"pho","type":"group","name":"Phở","desc":"kräftige Rinderbrühe, Reisbandnudeln, Asiatische Kräuter","options":[
-    {"key":"a","label":"mit Huhn","price":13.9},
-    {"key":"b","label":"mit Rindfleisch","price":14.9},
-    {"key":"c","label":"mit Tofu","price":11.9}
-  ],"img":"images/placeholder.svg"},
-
+  // Phở / Bowls / Reisnudeln
+  {"id":"pho-27","cat":"pho","type":"group","name":"Phở","desc":"kräftige Rinderbrühe, Reisbandnudeln, Asiatische Kräuter",
+    "options":[{"key":"a","label":"mit Huhn","price":13.9},{"key":"b","label":"mit Rindfleisch","price":14.9},{"key":"c","label":"mit Tofu","price":11.9}],
+    "img":"images/pho-rind.jpg"
+  },
   {"id":"bowl-28","cat":"bowls","type":"group","name":"Bowl","options":[
-    {"key":"a","label":"mit Huhn (gebraten)","price":11.9},
-    {"key":"b","label":"mit gebackenem Huhn","price":12.9},
-    {"key":"c","label":"mit Tempura-Garnelen","price":12.9},
-    {"key":"d","label":"mit Tofu","price":11.9},
+    {"key":"a","label":"mit Huhn (gebraten)","price":11.9},{"key":"b","label":"mit gebackenem Huhn","price":12.9},
+    {"key":"c","label":"mit Tempura-Garnelen","price":12.9},{"key":"d","label":"mit Tofu","price":11.9},
     {"key":"e","label":"mit Rindfleisch","price":14.0}
-  ],"img":"images/placeholder.svg"},
-
+  ],"img":"images/kokoscurry-huhn.jpg"},
   {"id":"bunbo-32","cat":"reisnudeln","type":"group","name":"Bún bò Nam Bộ","options":[
-    {"key":"a","label":"mit Huhn","price":11.9},
-    {"key":"b","label":"mit Rindfleisch","price":13.9},
-    {"key":"c","label":"mit Tofu","price":10.9},
-    {"key":"d","label":"mit Garnelen","price":12.9}
-  ],"img":"images/placeholder.svg"},
+    {"key":"a","label":"mit Huhn","price":11.9},{"key":"b","label":"mit Rindfleisch","price":13.9},
+    {"key":"c","label":"mit Tofu","price":10.9},{"key":"d","label":"mit Garnelen","price":12.9}
+  ],"img":"images/kokoscurry-huhn.jpg"},
 
+  // Spezial
   {"id":"bun-33","cat":"suppen","type":"single","name":"Bún Chua Hải Sản Suppe","price":14.9,"img":"images/bun-chua-hai-san.jpg"},
   {"id":"bun-34","cat":"spezial","type":"single","name":"Bún Chả Hà Nội (Spezialität)","price":14.9,"img":"images/bun-cha-ha-noi.jpg"},
   {"id":"topokki-36","cat":"spezial","type":"single","name":"Tteokbokki (Topokki)","price":9.9,"img":"images/Topokki.jpg"},
 
-  {"id":"kid-k1","cat":"kids","type":"single","name":"Süßkartoffel-Pommes mit gebackenem Fleisch","price":8.9,"img":"images/placeholder.svg"},
-  {"id":"kid-k2","cat":"kids","type":"single","name":"Chicken Yakitori mit Tempura-Garnelen","price":8.9,"img":"images/Chicken-Yakitori.svg"},
+  // Kids
+  {"id":"kid-k1","cat":"kids","type":"single","name":"Süßkartoffel-Pommes mit gebackenem Fleisch","price":8.9,"img":"images/suesskartoffel-pommes.jpg"},
+  {"id":"kid-k2","cat":"kids","type":"single","name":"Chicken Yakitori mit Tempura-Garnelen","price":8.9,"img":"images/yakitori.jpg"},
 
-  {"id":"des-35","cat":"dessert","type":"single","name":"Gebackene Banane","price":5.9,"img":"images/placeholder.svg"},
-  {"id":"des-36","cat":"dessert","type":"single","name":"Mochi","price":5.9,"img":"images/placeholder.svg"},
-  {"id":"des-37","cat":"dessert","type":"single","name":"Sesambällchen","price":5.9,"img":"images/placeholder.svg"},
+  // Dessert – tạm dùng ảnh chung
+  {"id":"des-35","cat":"dessert","type":"single","name":"Gebackene Banane","price":5.9,"img":"images/kokoscurry-huhn.jpg"},
+  {"id":"des-36","cat":"dessert","type":"single","name":"Mochi","price":5.9,"img":"images/kokoscurry-huhn.jpg"},
+  {"id":"des-37","cat":"dessert","type":"single","name":"Sesambällchen","price":5.9,"img":"images/kokoscurry-huhn.jpg"},
 
-  {"id":"drinks","cat":"getraenke","type":"list","name":"Getränke","items":[
-    {"id":"dr-cola","name":"Cola 0,3l","price":2.5},
-    {"id":"dr-fanta","name":"Fanta 0,3l","price":2.5},
-    {"id":"dr-sprite","name":"Sprite 0,3l","price":2.5},
-    {"id":"dr-limette-minze","name":"Limette-Minze","price":4.5},
-    {"id":"dr-zitrone-erdbeer","name":"Zitrone-Erdbeer","price":4.5},
-    {"id":"dr-yogurt-mango","name":"Mango Joghurt","price":4.5},
-    {"id":"dr-yogurt-avocado","name":"Avocado Joghurt","price":4.5},
-    {"id":"dr-yogurt-erdbeer","name":"Erdbeer Joghurt","price":4.5},
-    {"id":"dr-asahi","name":"Asahi Bier","price":3.0},
-    {"id":"dr-hefeweizen","name":"Hefeweizen","price":2.9},
-    {"id":"dr-rotwein","name":"Rotwein","price":4.0},
-    {"id":"dr-weisswein","name":"Weißwein","price":4.0},
-    {"id":"dr-lychee","name":"Lychee 250ml","price":3.0},
-    {"id":"dr-guave","name":"Guave 250ml","price":3.0}
-  ],"img":"images/placeholder.svg"},
+  // Getränke / Kaffee – có thể để ảnh chung hoặc logo
+  {"id":"drinks","cat":"getraenke","type":"list","name":"Getränke",
+    "items":[
+      {"id":"dr-cola","name":"Cola 0,3l","price":2.5},
+      {"id":"dr-fanta","name":"Fanta 0,3l","price":2.5},
+      {"id":"dr-sprite","name":"Sprite 0,3l","price":2.5},
+      {"id":"dr-limette-minze","name":"Limette-Minze","price":4.5},
+      {"id":"dr-zitrone-erdbeer","name":"Zitrone-Erdbeer","price":4.5},
+      {"id":"dr-yogurt-mango","name":"Mango Joghurt","price":4.5},
+      {"id":"dr-yogurt-avocado","name":"Avocado Joghurt","price":4.5},
+      {"id":"dr-yogurt-erdbeer","name":"Erdbeer Joghurt","price":4.5},
+      {"id":"dr-asahi","name":"Asahi Bier","price":3.0},
+      {"id":"dr-hefeweizen","name":"Hefeweizen","price":2.9},
+      {"id":"dr-rotwein","name":"Rotwein","price":4.0},
+      {"id":"dr-weisswein","name":"Weißwein","price":4.0},
+      {"id":"dr-lychee","name":"Lychee 250ml","price":3.0},
+      {"id":"dr-guave","name":"Guave 250ml","price":3.0}
+    ],
+    "img":"images/logo.jpg"
+  },
 
-  {"id":"coffee","cat":"kaffee","type":"list","name":"Kaffee","items":[
-    {"id":"cf-l1","name":"Cà phê sữa đá (Cafe Sua Dua)","price":3.5},
-    {"id":"cf-l2","name":"Cà phê sữa đặc (Cafe Sua Dac)","price":3.5}
-  ],"img":"images/placeholder.svg"}
+  {"id":"coffee","cat":"kaffee","type":"list","name":"Kaffee",
+    "items":[
+      {"id":"cf-l1","name":"Cà phê sữa đá (Cafe Sua Dua)","price":3.5},
+      {"id":"cf-l2","name":"Cà phê sữa đặc (Cafe Sua Dac)","price":3.5}
+    ],
+    "img":"images/logo.jpg"
+  }
 ];
+;
 
 const $ = (s, r=document)=>r.querySelector(s);
 const $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
